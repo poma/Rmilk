@@ -48,8 +48,7 @@ namespace Rmilk
 		{
 			textBox1.Text = web.Url.ToString();
 			if (!checkBox1.Checked) return;
-			string parsedScript = script.Text.Replace("$$login", Settings.Default.Login).Replace("$$password", Settings.Default.Password);
-			InjectScript(getResource("Rmilk.jquery.js") + parsedScript);
+			InjectScript(getResource("Rmilk.jquery.js") + script.Text);
 		}
 
 		private void InjectScript(string script)

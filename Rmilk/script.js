@@ -1,25 +1,25 @@
-﻿var login = '$$login';
-var password = '$$password';
+﻿var login = '';
+var password = '';
+
+var hiddenTabs = ["Example1", "SentExample"];
+var shortcuts = {
+	'с ': 'today ', 
+	'з ': 'tomorrow ', 
+	'пн ': 'monday ', 
+	'вт ': 'tuesday ', 
+	'ср ': 'wednsday ', 
+	'чт ': 'thursday ', 
+	'пт ': 'friday ', 
+	'сб ': 'satudray ', 
+	'вс ': 'sunday '
+};
 
 if (window.location.href.indexOf('section.tasks') != -1) {
-    var hiddenTabs = ["Sent"];
-    var shortcuts = {
-	    'с ': 'today ', 
-	    'з ': 'tomorrow ', 
-	    'пн ': 'monday ', 
-	    'вт ': 'tuesday ', 
-	    'ср ': 'wednsday ', 
-	    'чт ': 'thursday ', 
-	    'пт ': 'friday ', 
-	    'сб ': 'satudray ', 
-	    'вс ': 'sunday '
-    };
-
     $(function () {
 	    $('.appfootercontent, .xtoolbox_selector, #appheader, #sort-button, #add-helpicon').hide();
 	    $('#content').css('padding-top', '0px');
 	    $('#detailsbox').css('padding-top', '10px');
-	    $('#statusbox').css({'padding': '0', 'margin': '0', 'height': '', 'position': 'fixed', 'bottom': '-20'});
+	    $('#statusbox').css({'padding': '0', 'margin': '0', 'height': '', 'position': 'fixed', 'bottom': '0'});
 	    $('body').css('overflow-x', 'hidden');
         $('body').css('overflow-y', 'auto');
 	    $('#listtabs ul li').each(function (i, e) {
@@ -44,7 +44,7 @@ if (window.location.href.indexOf('section.tasks') != -1) {
     });
 }
 
-if (window.location.href.indexOf('login') != -1 && ) {
+if (window.location.href.indexOf('login') != -1 && login.length > 0 && password.length > 0) {
     $(function () {
         $('#username').val('login');
         $('#password').val('password');
