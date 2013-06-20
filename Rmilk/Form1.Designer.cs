@@ -32,13 +32,13 @@
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
 			this.web = new System.Windows.Forms.WebBrowser();
 			this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-			this.imageList1 = new System.Windows.Forms.ImageList(this.components);
 			this.checkBox1 = new System.Windows.Forms.CheckBox();
 			this.btHome = new System.Windows.Forms.Button();
 			this.button2 = new System.Windows.Forms.Button();
 			this.script = new System.Windows.Forms.TextBox();
 			this.button1 = new System.Windows.Forms.Button();
 			this.textBox1 = new System.Windows.Forms.TextBox();
+			this.imageList1 = new System.Windows.Forms.ImageList(this.components);
 			this.splitContainer1.Panel1.SuspendLayout();
 			this.splitContainer1.Panel2.SuspendLayout();
 			this.splitContainer1.SuspendLayout();
@@ -82,13 +82,6 @@
 			this.splitContainer1.Size = new System.Drawing.Size(505, 623);
 			this.splitContainer1.SplitterDistance = 268;
 			this.splitContainer1.TabIndex = 2;
-			// 
-			// imageList1
-			// 
-			this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
-			this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
-			this.imageList1.Images.SetKeyName(0, "btStartScheduledTasks.Image - Copy.png");
-			this.imageList1.Images.SetKeyName(1, "btStartScheduledTasks.Image.png");
 			// 
 			// checkBox1
 			// 
@@ -161,6 +154,13 @@
 			this.textBox1.Size = new System.Drawing.Size(388, 20);
 			this.textBox1.TabIndex = 0;
 			this.textBox1.Text = "http://www.rmilk.com";
+			// 
+			// imageList1
+			// 
+			this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
+			this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+			this.imageList1.Images.SetKeyName(0, "btStartScheduledTasks.Image - Copy.png");
+			this.imageList1.Images.SetKeyName(1, "btStartScheduledTasks.Image.png");
 			// 
 			// Form1
 			// 

@@ -78,11 +78,11 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Resources\home.png" />
-    <Content Include="Resources\icon.ICO" />
+    <None Include="Resources\home.png" />
+    <None Include="Resources\icon.ICO" />
     <EmbeddedResource Include="jquery.js" />
-    <Content Include="Resources\navigate.png" />
-    <Content Include="Resources\refresh.png" />
+    <None Include="Resources\navigate.png" />
+    <None Include="Resources\refresh.png" />
     <EmbeddedResource Include="script.js" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
