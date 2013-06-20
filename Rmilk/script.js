@@ -19,6 +19,7 @@ if (window.location.href.indexOf('section.tasks') != -1) {
 	    $('.appfootercontent, .xtoolbox_selector, #appheader, #sort-button, #add-helpicon').hide();
 	    $('#content').css('padding-top', '0px');
 	    $('#detailsbox').css('padding-top', '10px');
+        $('#add-box').css('padding', '7px 8px 7px 8px');
 	    $('#statusbox').css({'padding': '0', 'margin': '0', 'height': '', 'position': 'fixed', 'bottom': '0'});
 	    $('body').css('overflow-x', 'hidden');
         $('body').css('overflow-y', 'auto');
