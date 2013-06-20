@@ -1,7 +1,15 @@
-﻿var login = '';
+// This is a main script for customization
+
+// login and pass for automatic logging in
+// WARNING! This is insecure!
+var login = '';
 var password = '';
 
+// Hide some unneeded tabs
 var hiddenTabs = ["Example1", "SentExample"];
+
+// Add some keyboard shortcuts for 'add task' box
+// Some shortcuts for Russian language in this example
 var shortcuts = {
 	'с ': 'today ', 
 	'з ': 'tomorrow ', 
